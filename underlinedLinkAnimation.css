@@ -1,0 +1,68 @@
+/*
+
+    Used colors:
+Background color: #1b1b1b
+Main color: darkorange (#ff8c00)
+
+*/
+
+/* Presets */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* Link styling */
+
+a{
+    position: relative;
+    color: darkorange;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(90deg, transparent, darkorange);
+    transition: width 0.3s;
+}
+
+a:hover:after{
+    width: 99%;
+}
+
+/* Footer styling - feel free to delete this */
+
+footer{
+    position: absolute;
+    bottom: 0.6%;
+    color: white;
+
+}
+
+footer a{
+    font-size: 1em;
+}
+
+footer a:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(90deg, transparent, darkorange);
+    transition: width 0.3s;
+}
